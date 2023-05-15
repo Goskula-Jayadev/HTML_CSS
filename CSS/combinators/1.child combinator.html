@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div > b{color: red;}
+        b{color: blue;}
+    </style>
+</head>
+<body>
+
+    <!-- I want to give red color to bold in div only, but all bold have color blue-->
+    <!-- In this situation you can use child combinator(" > ") => div > b => bold whose parent is div -->
+    <div>
+        <p>DIV</p>
+        <b>bold in DIV</b>
+    </div>
+
+    <section>
+        <p>SECTION</p>
+        <b>bold in SECTION</b>
+    </section>
+</body>
+</html>

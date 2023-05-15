@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .flex-container{
+            background-color: purple;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+           
+        }
+        .flex-items{
+            background-color: blue;
+            width: 10px;
+            padding:10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. distributes the free space between elements -->
+    <!-- 2. if flex-direction(row) => flex-start = left side, flex-end = right -->
+    <!-- 3. if flex-direction(row-reverse) => flex-start = right side, flex-end = left -->
+    <!-- 4. values: flex-start, flex-end, center, space-around, space-between, space-evenly -->
+
+
+    <div class="flex-container">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+    </div>
+
+
+    <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+     <h1>row-start</h1>
+     <img src="images/row-start1.png" alt="" style="width: 100%;">
+     <h1>row-center</h1>
+     <img src="images/row-center.png" alt="" style="width: 100%;">
+     <h1>row-end</h1>
+     <img src="images/row-end.png" alt="" style="width: 100%;">
+    </div>
+
+    <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+        <h1>row-reverse-start</h1>
+        <img src="images/row-reverse-start.png" alt="" style="width: 100%;">
+        <h1>row-reverse-center</h1>
+        <img src="images/row-reverse-center.png" alt="" style="width: 100%;">
+        <h1>row-reverse-end</h1>
+        <img src="images/row-reverse-end.png" alt="" style="width: 100%;">
+       </div>
+
+       <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+        <h1 style="display: inline-block;">column-start</h1>
+        <img src="images/column-start.png" alt="" style="height:500px; width: 100px;">
+        <h1 style="display: inline-block; ">column-center</h1>
+        <img src="images/column-center.png" alt="" style="height:500px; width: 100px;">
+        <h1 style="display: inline-block; ">column-end</h1>
+        <img src="images/column-end.png" alt="" style="height:500px; width: 100px;">
+       </div>
+
+
+       <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+        <h1 style="display: inline-block; ">column-reverse-start</h1>
+        <img src="images/column-reverse-start.png" alt="" style="height:500px; width: 100px;">
+        <h1 style="display: inline-block; ">column-reverse-center</h1>
+        <img src="images/column-reverse-center.png" alt="" style="height:500px; width: 100px;">
+        <h1 style="display: inline-block; ">column-reverse-end</h1>
+        <img src="images/column-reverse-end.png" alt="" style="height:500px; width: 100px;">
+       </div>
+
+       <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+        <h1>space-around</h1>
+        <img src="images/space-around.png" alt="" style=" width: 100%;">
+        <h1>space-between</h1>
+        <img src="images/space-between.png" alt="" style=" width: 100%;">
+        <h1>space-evenly</h1>
+        <img src="images/space-evenly.png" alt="" style=" width: 100%;">
+       </div>
+</body>
+</html>

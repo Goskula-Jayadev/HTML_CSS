@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class_1 ~ .class_2{color: red;}
+    </style>
+</head>
+<body>
+    <!-- I want to make all next siblings of class_1 which has class has class_2 -->
+    <!-- you can use all next sibling combinator(" ~ ") for this => .class_1 ~ .class_2 => all elements which are next of class1 which has class2 slector -->
+    <b class="class_2">BOLD 1</b>
+    <div class="class_1">DIV 1</div>
+    <b>BOLD 2 NO CLASS</b>
+    <p class="class_2">PARA 1</p>
+    <div class="class_2">DIV 2</div>
+    <p>middle para 1</p>
+    <p>middle para 2</p>
+    <div class="class_2">DIV 3</div>
+
+    <!-- para doesn't get red color coz it not the sibling of class_1 => they are not present in the same level if we draw a tree -->
+    <div><p class="class_2">para</p></div>
+</body>
+</html>

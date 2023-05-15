@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            background-color: red;
+            position: absolute;
+            /* top:0px;
+            bottom:0px;
+            left:0px;
+            right:0px; */
+            /* if width and height are removed the element will take the entire page */
+        }
+        .PARENT{
+            background-color: blue;
+            height:300px;
+            width: 300px;
+            padding: 100px;
+            position: relative;
+        }
+        .child{
+            background-color: tomato;
+            position: absolute;
+            top:250px;
+            bottom:5px;
+            left:0px;
+            right:0px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1. item will be floating on the document -->
+    <!-- 2. other elements behave as if the absolute positioned ele is not there -->
+    <!-- 3. all offsets works for this i.e., you can apply both sides in vertical and horizontal direction -->
+    <!-- 4. it takes the reference of browser outline or first non static ancestor -->
+    <!-- 5. if an element position is mentioned as absolute it behaves as an INLINE element -->
+
+    <h1>HEAIDNG 1</h1>
+    <!-- THis div becmomes inline as we mentioned its postion to be absolute -->
+    <div class="div1">DIV_TEXT</div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus incidunt quas rem quisquam sunt. Eos, repellat omnis. Quis, quibusdam illo!</p>
+    <br>
+    <br>
+    <br>
+    <div class="PARENT">
+        <p>PARENT TEXT Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque quibusdam totam fugiat ipsum vitae nisi doloremque ea, reiciendis odit voluptas.</p>
+        <div class="child"><p>CHILD TEXT Lorem ipsum dolor sit amet.</p></div>
+    </div>
+
+
+
+</body>
+</html>

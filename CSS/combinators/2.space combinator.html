@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div b{color: red;}
+        nav b{color: blue;}
+    </style>
+</head>
+<body>
+
+    <!-- I want to color all bolds in div with red and nav with blue -->
+    <!-- In this situation you can use space combinator(" ") => div b, nav b => all bold descendents of div,nav -->
+    <!-- descendents => all future generations -->
+    <div>
+        <section><p><b>SECTION_1 PARA BOLD</b></p></section>
+        <section><span><b>SECTION_2 span BOLD</b></span></section>
+        <section><figcaption><b><b>SECTION_3 FIGCAPTION BOLD</b></b></figcaption></section>
+    </div>
+
+    <nav>
+        <section><p><b>SECTION_1 PARA BOLD</b></p></section>
+        <section><span><b>SECTION_2 span BOLD</b></span></section>
+        <section><figcaption><b><b>SECTION_3 FIGCAPTION BOLD</b></b></figcaption></section>
+    </nav>
+</body>
+</html>

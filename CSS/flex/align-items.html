@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: purple;
+            height: 400px;
+            padding: 20px;
+            display: flex;
+            align-items: stretch;
+        }
+        .flex-items{
+            background-color: blue;
+            margin:5px;
+            padding:10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. align self is for flex children and align-items is for flex container -->
+    <!-- 2. everything same align-self -->
+
+    <div class="flex-container">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+    </div>
+
+    <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+        <h1>align-items-start</h1>
+        <img src="images/align-items-start.png" alt="" >
+        <h1>align-items-center</h1>
+        <img src="images/align-items-center.png" alt="" >
+        <h1>align-items-end</h1>
+        <img src="images/align-items-end.png" alt="" >
+        <h1>align-items-strech</h1>
+        <img src="images/align-items-strech.png" alt="" >
+       </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .margin{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .margin_alt{
+            /* margin: top right bottom left / top (left,right) bottom / (top,bottom) (left,right) */
+            /* margin: 20px 20px 20px 20px; */
+            /* margin: 20px 50px 20px; */
+            margin: 20px 30px;
+
+        }
+        .margin_center{
+            /* Inorder to move a html element to center you must specify its width if is a block level element as they take 100% widht leaving no space for moving */
+            /* for inline elements, first tou have make them block elements then you can apply auto */
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- margin take bg of parent -->
+    
+    <h1 class="margin_center">Lorem </h1>
+</body>
+</html>

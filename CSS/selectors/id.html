@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id2{color: red;}
+        #id1{color: green}
+    </style>
+</head>
+<body>
+
+    <!-- even though you can give one id to many elements, but it is not recommended ID must be unique -->
+    <p id="id1">ID1 para1</p>
+    <p id="id1">ID1 para2</p>
+
+    <!-- you cant give multiple values to ID -->
+    <p id="id2 id1">ID2 para3</p>
+
+    <!-- the first id(id 2) will be applied -->
+    <p id="id2" id="id1">para4</p>
+</body>
+</html>

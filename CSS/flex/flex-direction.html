@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: purple;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .flex-items{
+            background-color: blue;
+            margin:5px;
+            padding:10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. decide the direction of flex children -->
+    <!-- 2. value => row(default), row-reverse, column, column-reverse -->
+    <!-- 3. row(default), row-reverse => main = horizontal, cross = vertical -->
+    <!-- 4. column,cloumn-reverse => main = vertical, cross = horizontal -->
+
+    
+    <div class="flex-container">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+    </div>
+    
+    <h1>row</h1>
+    <img src="images/row.png" alt="">
+
+    <h1>row-reverse</h1>
+    <img src="images/row-reverse.png" alt="">
+
+    <h1>column</h1>
+    <img src="images/column.png" alt="">
+
+    <h1>column-reverse</h1>
+    <img src="images/column-reverse.png" alt="">
+</body>
+</html>

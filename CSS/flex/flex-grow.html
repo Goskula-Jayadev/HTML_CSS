@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        .flex-container{
+            background-color: purple;
+            height: 300px;
+            width: 500px;
+            padding: 20px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+            justify-content: end;
+        }
+        .flex-items{
+            background-color: blue;
+            margin:5px;
+            padding:10px;
+            color: white;
+        }
+        .last1{
+            background-color: orange;
+            flex-grow:5;
+        }
+        .last2{
+            background-color: green;
+            flex-grow:2;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. As align is there it works about cross axis-->
+    <!-- 2. align-content moves the elements of cross axis according to the given value not in there self container(as align-self / align-items) but wrt parent container -->
+    <!-- 3. values -> same as justify content -->
+    <div class="flex-container">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+        <div class="flex-items">10</div>
+        <div class="flex-items">20</div>
+        <div class="flex-items">30</div>
+        <div class="flex-items">40</div>
+        <div class="flex-items">50</div>
+        <div class="flex-items last1">100</div>
+        <div class="flex-items last2">101</div>
+    </div>
+
+    <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+        <h1>1 is to 0</h1>
+        <img src="images/1 is to 0.png" alt="" >
+        <h1>2 is to 1</h1>
+        <img src="images/2 is to 1.png" alt="" >
+        <h1>5 is to 3></h1>
+        <img src="images/5 is to 3.png" alt="" >
+        <h1></h1>
+        <img src="images/h.png" alt="" >
+       </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class_1{color: orangered;}
+        .class_2{ font-size: 100px;}
+    </style>
+</head>
+<body>
+    
+    <!-- class can be duplicate that means you can apply one class to many elements, there is no need to maintain uniqueness of class -->
+    <p class="class_1">class_1 para_1</p>
+    <p class="class_1">class_1 para_2</p>
+
+    <!-- class can take multiple values, first the class which is positioned first in styling is applied then the classes below that overwrite the similar prop -->
+    <!-- here, class1 applied first as it is infront of class2 and then class 2 is applied. No overwrite takes place as there no common prop -->
+    <!-- class="the order doesnt matter here" <style> the order matters here </style> -->
+    <p class="class_2 class_1">para_3</p>
+
+    <!-- the first class(class 1) will be applied -->
+    <p class="class_1" class="class_2">PARA_4</p>
+</body>
+</html>

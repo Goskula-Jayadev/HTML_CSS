@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1st combo style */
+        .class_1 ~ .class_2 > .test{
+            color: red;
+        }
+
+        /* 2nd combo style */
+        div > p{color:blue;}
+        div  p{color:purple;}
+        div + div p{color: pink;}
+        div + div p > b{color: green;}
+        div + div p > b ~ em{color: green;}
+    </style>
+</head>
+<body>
+
+    <!-- 1st combo -->
+    <div class="class_1">DIV 1</div>
+    <b>BOLD 2 NO CLASS</b>
+    <p class="class_2">PARA 1</p>
+    <div class="class_2">DIV 2</div>
+    <div class="class_2"><p class="test">para</p><p>ANOTHER PARA</p></div>
+
+    <!-- 2nd combo -->
+    <div>
+        <p><span>PARA 1</span></p>
+        <p><b>PARA 2</b></p>
+    </div>
+    <div>
+        <p>Lorem, ipsum dolor. <b>BOLD TEXT</b><em>ITALIC sibling to bold</em></p>
+        <p><em>ITALIC</em></p>
+    </div>
+</body>
+</html>

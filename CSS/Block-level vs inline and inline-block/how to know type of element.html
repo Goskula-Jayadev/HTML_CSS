@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{background-color: red;}
+        a{background-color: red; width: 100px; height: 100px;}
+        button{background-color: red; width: 100px; height: 100px;}
+        iframe{width: 500px; height: 500px}
+    </style>
+</head>
+<body>
+    <!-- steps to know whether a HTMl element is inline/inline-block/block  -->
+
+    <!-- 1.block elements => give bg color if bg color occupies entire length it is block level element-->
+    <h1>Heading</h1>
+
+    <!-- 2.inline -> give bg(it wont occupiy entire width), give widht/height/padding(vertically overflow)/border(vertically overflow)/margin(vertical) -->
+    <a href="#">Achor TAg</a>
+
+    <!-- 3.inline-block -> give bg(it wont occupiy entire width), give widht/height/padding/border/margin everything will work fine -->
+    <button>HELLO</button>
+    <!-- you can't give bg-color -->
+    <iframe src="https://google.com" frameborder="0"></iframe>
+    <b>BOLD</b>
+
+</body>
+</html>

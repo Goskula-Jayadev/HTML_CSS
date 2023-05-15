@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            background-color: purple;
+            height: 400px;
+            padding: 20px;
+            display: flex;
+        }
+        .flex-items{
+            background-color: blue;
+            margin:5px;
+            padding:10px;
+            color: white;
+        }
+        .item3{
+            background-color: orange;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. align will work about cross axis and justify will work about main axis -->
+    <!-- 2. align-self is applied only to flex-children -->
+    <!-- 3. values: strech(default), flex-start, center, flex-end -->
+    <div class="flex-container">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items item3">3</div>
+        <div class="flex-items">4</div>
+        <div class="flex-items">5</div>
+    </div>
+
+    <div style="border:5px solid black; margin-top: 10px; padding: 15px;">
+        <h1>align-self-start</h1>
+        <img src="images/align-self-start.png" alt="" >
+        <h1>align-self-center</h1>
+        <img src="images/align-self-center.png" alt="" >
+        <h1>align-self-end</h1>
+        <img src="images/align-self-end.png" alt="" >
+        <h1>align-self-strech</h1>
+        <img src="images/align-self-strech.png" alt="" >
+       </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 16px;;
+        }
+        .flex-container{
+            display: flex;
+            padding:0px 100px;
+            justify-content: space-between;
+            border-bottom: 2px solid #EFEFEF;
+           
+        }
+        .flex-container1{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 15px;
+            align-items: center;
+        }
+        .flex-container2{
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 7px;
+        }
+        a{
+            text-decoration: none;
+            color: #848484;
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex-container">
+        <div class="flex-container1">
+            <img src="images/leetcode.png" alt="" style="width: 18.7px; height: 22px; " class="flex-items1">
+            <a href="#" class="flex-items1"><p>Explore</p></a>
+            <a href="#" class="flex-items1"><p>Problems</p></a>
+            <a href="#" class="flex-items1"><p>Contest</p></a>
+            <a href="#" class="flex-items1"><p>Discuss</p></a>
+            <select class="flex-items1" ><option value="1">Online interview</option><option value="2">Assesment</option></select>
+            <select class="flex-items1"><option value="1">Premium</option><option value="2">Redeem</option></select>
+        </div>
+        <div class="flex-container2">
+            <div class="flex-items2"><button>Premium</button></div>
+            <div class="flex-items2"><a href="#">Register</a><span>or</span></div>
+            <div class="flex-items2"><a href="#">Sign in</a></div>
+             
+        </div>
+    </nav>
+</body>
+</html>

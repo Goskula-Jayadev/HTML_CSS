@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{background-color: red;}
+        h1{background-color: yellow;}
+        div{background-color: blue; width: 100px; height: 100px; position: relative; bottom: 100px; right: 20px; top:20px; left:20px;}
+    </style>
+</head>
+<body>
+    <!-- 1. move wrt to original position of element -->
+    <!-- 2. Original postion is preserved it cannot be occupied by any other elements -->
+    <!-- 3. top bottom or reverse top has highest priority-->
+    <!-- 4. left right or reverse left has highest priority -->
+    <!-- 5. you can only apply only one side of  vertical and horizontal direction-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, doloremque.</p>
+    <div>DIV TEXT</div>
+    <h1>HEading</h1>
+    <h1>IMage 1</h1>
+    <img src="without_relative.png" alt="">
+    <br>
+    <h1>image 2</h1>
+    <img src="with_relative.png" alt="">
+</body>
+</html>

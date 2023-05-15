@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div + div{color: red;}
+        .para_1 + .para_2{color: blue;}
+    </style>
+</head>
+<body>
+    
+
+    <!-- I want to apply red color for every div which has a div previously => first div is excluded (color will not be applied) -->
+    <div>ab</div>
+    <div>cd</div>
+    <div>ef</div>
+    <section>gh</section>
+    <div>ij</div>
+
+    <p class="para_1">PARA_1</p>
+    <p class="para_2">PARA_2</p>
+    
+    <p class="para_2">PARA_2</p>
+    <p class="para_1">PARA_1</p>
+    <p class="para_1">PARA_1</p>
+    <p class="para_2">PARA_2</p>
+    <section>
+        <p class="para_1">PARA_1</p>
+        <p class="para_2">PARA_2</p>
+    </section>
+
+</body>
+</html>

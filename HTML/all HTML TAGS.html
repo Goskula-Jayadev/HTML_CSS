@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All html tags</h1>
+    
+    <h2>para:</h2>
+    <p style="background-color: red;">THIS IS A PARA</p>
+
+    <h3>IMage</h3>
+    <!-- self closin tag img -->
+    <img src="https://course.acciojob.com/defaults/leader2.svg" alt="unable to find">
+    <img src="https://course.acciojob.com/defaults/leader2.sv" alt="example of broken image">
+
+    <h4>absolute and relative paths</h4>
+    <img src="./pic.png" alt="relative">
+    <img src="D:\ACCIOJOB\RECORDINGS\Front end 1\Revise\All HTML TAGS\pic.png" alt="absolute">
+
+    <h5>semantic tags</h5>
+    <header>This is head</header>
+    <main>This is main</main>
+    <body>This is body
+        <div>section 1</div>
+        <div>section 2</div>
+        <section>section 3</section>
+    </body>
+    <footer>end of semantic tags</footer>
+
+    <h6>video tag</h6>
+    <video src="D:\ACCIOJOB\RECORDINGS\Front end 1\Revise\All HTML TAGS\example.mp4" controls></video>
+
+    <h6>audio tag</h6>
+    <audio src="file_example_MP3_700KB.mp3" controls></audio>
+
+    <h5>source example</h5>
+    <video  controls> <source src="example.mp4" type="video/mp4"></video>
+    <audio  controls><source src="file_example_MP3_700KB.mp3" type="audio/mp3"></audio>
+
+    <h5>iframe</h5>
+    <iframe src="https://course.acciojob.com/" frameborder="0"></iframe>
+    <iframe src="../../March 10 - Common Tags and Supported attributes/iframes/child.html"></iframe>
+
+    <h4>lists</h4>
+    <span>normal list:-</span>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+
+    <span>ordered list:-</span>
+    <ol type="1">
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+    </ol>
+    <ol type="A">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        </ol>
+        <ol type="a">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            </ol>
+            <ol type="I">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+                </ol>
+                <ol type="i">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                    </ol>
+
+    <span>ordered list:-</span>
+    <ul type="disc">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+        </ul>
+        <ul type="circle">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            </ul>
+            <ul type="square">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+                </ul>
+                <ul type="none">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                    </ul>
+
+    <span>Nested list:-</span>
+    <ol type="1">
+        <li>
+        <ul type="disc">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            </ul></li>
+            <li>
+            <ul type="circle">
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+            </ul></li>
+            <li>
+            <ul type="square">
+                <li>list item 1</li>
+                <li>list item 2</li>
+                <li>list item 3</li>
+                </ul></li>
+                <li>
+                <ul type="none">
+                    <li>list item 1</li>
+                    <li>list item 2</li>
+                    <li>list item 3</li>
+                    </ul></li>
+    </ol>
+
+    <span><b>Description list</b></span>
+    <dl>
+        <dt>Name:</dt>
+        <dd>Jayadev</dd>
+        <dt>age:</dt>
+        <dd>23</dd>
+    </dl>
+    <span><b>END OF LISTs</b></span>
+
+    <h4>blockquote</h4>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">Hello</blockquote>
+    <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+
+    <h4>break</h4>
+    <br>
+
+    <h4>pre</h4>
+    <pre>
+        khbfkjf
+     sdas
+        p   
+    </pre>
+
+    <!-- th: center alligned (bold text), tr: table row  -->
+    <!-- th vs tr dosen't make sense coz they are different, td vs th makes sense coz they work on cell(data) -->
+    <h4>table</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+            <th>phone.NO</th>
+        </tr>
+        <tr>
+            <td>Jayadev</td>
+            <td>23</td>
+            <td>6300729204</td>
+        </tr>
+    </table>
+
+    <h4>Rowspan and colspan</h4>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>age</th>
+            <th>phone.NO</th>
+            <th>Other No</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Jayadev</td>
+            <td >23</td>
+            <td colspan="2">6300729204</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>6300729204</td>
+            <td>9989452235</td>
+        </tr>
+    </table>
+
+
+
+    <h4>bold and strong</h4>
+    <b>BOLD TEXT</b>
+    <strong>STRONG TEXT</strong>
+
+
+    <h4>Input Tag</h4>
+    <input type="text" placeholder="TEXT">
+    <input type="password" placeholder="enter password">
+    <input type="date">
+    <input type="datetime">
+    <input type="datetime-local">
+    <input type="url">
+    <input type="file">
+    <input type="number">
+    <input type="checkbox">
+    <input type="radio" name="g">
+    <input type="radio" name="g">
+    <input type="radio" name="g">
+    <input type="email">
+    <input type="text" hidden>
+    <input type="submit">
+    <input type="color">
+
+
+    <h4>Form</h4>
+    <form action="">
+    <input type="text" placeholder="TEXT" name="text">
+    <br>
+    <input type="password" placeholder="enter password" name="password">
+    <br>
+    <input type="date" name="date">
+    <br>
+    <input type="datetime" name="datetime">
+    <br>
+    <input type="datetime-local" name="datetime-local">
+    <br>
+    <input type="url" name="url">
+    <br>
+    <input type="file" name="file">
+    <br>
+    <input type="number" name="number">
+    <br>
+
+    <div>
+    <div>
+    <input type="checkbox" id="GRE" value="GRE" name="checkbox1">
+    <label for="GRE">GRE</label>
+    </div>
+    <div>
+    <input type="checkbox" id="Duolingo" value="Duolingo" name="checkbox2">
+    <label for="Duolingo">Duolingo</label>
+    </div>
+    <div>
+    <input type="checkbox" id="IELTS" value="IELTS" name="checkbox3">
+    <label for="IELTS">IELTS</label>
+    </div>
+    </div>
+    <br>
+    <div>
+        <div>
+    <input type="radio" name="g" value="GRE">
+    <label for="GRE">GRE</label>
+</div>
+    <div>
+    <input type="radio" name="g" value="Duolingo">
+    <label for="Duolingo">Duolingo</label>
+</div>
+    <div>
+    <input type="radio" name="g" value="IELTS">
+    <label for="IELTS">IELTS</label>
+</div>
+    </div>
+
+    <input type="email" name="email">
+    <input type="text" hidden>
+    <input type="submit">
+    <input type="color" name="color">
+</form>
+
+
+    <h4>Text area</h4>
+    <textarea name="text area" id="23" cols="30" rows="10"></textarea>
+
+
+    <h4>Input disabled</h4>
+    <input type="text" value="YOU CANT CHANGGE VALUE"disabled>
+</body>
+</html>
